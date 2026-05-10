@@ -12,7 +12,11 @@ export default function Register() {
     const handleSendOtp = async (e: React.FormEvent) => {
         e.preventDefault();
         const { error } = await supabase.auth.signInWithOtp({ email });
-        if (!error) setStep(2);
+        if (!error) {
+            setStep(2);
+            alert("OTP send successfully!")
+        }
+            
         else alert(error.message);
     };
 
