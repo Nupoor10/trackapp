@@ -23,7 +23,7 @@ export default function Login() {
                 <input type="email" placeholder="Email" value={email} required className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" onChange={e => setEmail(e.target.value)} />
                 <input type="password" placeholder="Password" value={password} required className="w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" onChange={e => setPassword(e.target.value)} />
 
-                <button className="cursor-pointer mt-4 w-full rounded-lg bg-indigo-600 p-3 font-semibold text-white transition-colors hover:bg-indigo-700">Login</button>
+                <button className="cursor-pointer mt-4 w-full rounded-lg bg-indigo-600 p-3 font-semibold text-white transition-colors hover:bg-indigo-700">Start Tracking!</button>
 
                 <p className="mt-4 text-center text-sm text-slate-400">
                     New user?{" "}
